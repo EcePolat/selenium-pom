@@ -11,16 +11,28 @@ public class SignupLoginPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    @FindBy(xpath = "//*[text()='Login to your account']")
+    public WebElement loginAccountTitle;
+
     @FindBy(xpath = "//*[text()='New User Signup!']")
     public WebElement newUserTitle;
+
+    @FindBy(xpath = "//input[@data-qa = 'login-email']")
+    public WebElement loginEmail;
+
+    @FindBy(xpath = "//input[@data-qa = 'login-password']")
+    public WebElement password;
+
+    @FindBy(xpath = "//button[@data-qa = 'login-button']")
+    public WebElement loginButton;
 
     @FindBy(xpath = "//input[@name = 'name']")
     public WebElement name;
 
-    @FindBy(xpath = "//input[@data-qa= 'signup-email']")
+    @FindBy(xpath = "//input[@data-qa = 'signup-email']")
     public WebElement signupEmail;
 
-    @FindBy(xpath = "//button[@data-qa= 'signup-button']")
+    @FindBy(xpath = "//button[@data-qa = 'signup-button']")
     public WebElement signupButton;
 
     @FindBy(xpath = "//h2[@class = 'title text-center']")

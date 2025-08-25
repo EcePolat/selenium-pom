@@ -40,7 +40,7 @@ public class RegisterUserTest {
         Assert.assertTrue(slpage.newUserTitle.isDisplayed());
 
         slpage.name.sendKeys("ece");
-        slpage.signupEmail.sendKeys("eecce@gmail.com");
+        slpage.signupEmail.sendKeys("eece@gmail.com");
         slpage.signupButton.click();
 
         Actions actions = new Actions(Driver.getDriver());
